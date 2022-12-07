@@ -1,5 +1,13 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-var saveButtonEl 
+var hour9El = $('#hour9');
+ addClass('past');
+var hour10El= ('#hour10');
+addClass('present');
+var hour11El = ('#hour11');
+addClass('future');
+
+addClass('present')
+
 
 // the code isn'.cht run until the browser has finished rendering all the elements
 // in the html.
