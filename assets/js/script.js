@@ -1,5 +1,54 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 
+var nine = {
+  location: $("#hour-9"),
+  btn: $("#save"),
+  num: "9"
+
+};
+
+var nine = {
+  location: $("#hour-10"),
+  btn: $("#save"),
+  num: "10"
+
+};
+
+var nine = {
+  location: $("#hour-11"),
+  btn: $("#save"),
+  num: "11"
+
+};
+
+var nine = {
+  location: $("#hour-12"),
+  btn: $("#save"),
+  num: "12"
+
+};
+
+var nine = {
+  location: $("#hour-1"),
+  btn: $("#save"),
+  num: "1"
+
+};
+
+var nine = {
+  location: $("#hour-2"),
+  btn: $("#save"),
+  num: "2"
+
+};
+
+var nine = {
+  location: $("#hour-3"),
+  btn: $("#save"),
+  num: "3"
+
+};
+
 
 
 
@@ -26,4 +75,4 @@
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
-});
+
