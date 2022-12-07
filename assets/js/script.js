@@ -1,48 +1,50 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
+ var timeEl = [nine, ten, twelve, one, two, three];
 
-var nine = {
+
+ var nine = {
   location: $("#hour-9"),
   btn: $("#save"),
   num: "9"
 
 };
 
-var nine = {
+var ten = {
   location: $("#hour-10"),
   btn: $("#save"),
   num: "10"
 
 };
 
-var nine = {
+var eleven = {
   location: $("#hour-11"),
   btn: $("#save"),
   num: "11"
 
 };
 
-var nine = {
+var twelve = {
   location: $("#hour-12"),
   btn: $("#save"),
   num: "12"
 
 };
 
-var nine = {
+var one = {
   location: $("#hour-1"),
   btn: $("#save"),
   num: "1"
 
 };
 
-var nine = {
+var two = {
   location: $("#hour-2"),
   btn: $("#save"),
   num: "2"
 
 };
 
-var nine = {
+var three = {
   location: $("#hour-3"),
   btn: $("#save"),
   num: "3"
