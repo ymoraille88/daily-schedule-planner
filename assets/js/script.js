@@ -1,60 +1,86 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
- var timeEl = [nine, ten, twelve, one, two, three];
 
 
- var nine = {
-  location: $("#hour-9"),
+var nine = {
+  location: $("#hour-9")[0],
   btn: $("#save"),
   num: "9"
 
 };
 
 var ten = {
-  location: $("#hour-10"),
+  location: $("#hour-10")[0],
   btn: $("#save"),
   num: "10"
 
 };
 
 var eleven = {
-  location: $("#hour-11"),
+  location: $("#hour-11")[0],
   btn: $("#save"),
   num: "11"
 
 };
 
 var twelve = {
-  location: $("#hour-12"),
+  location: $("#hour-12")[0],
   btn: $("#save"),
   num: "12"
 
 };
 
 var one = {
-  location: $("#hour-1"),
+  location: $("#hour-1")[0],
   btn: $("#save"),
   num: "1"
 
 };
 
 var two = {
-  location: $("#hour-2"),
+  location: $("#hour-2")[0],
   btn: $("#save"),
   num: "2"
 
 };
 
 var three = {
-  location: $("#hour-3"),
+  location: $("#hour-3")[0],
   btn: $("#save"),
   num: "3"
 
 };
+var timeEl = [nine, ten,eleven, twelve, one, two, three];
 
-var dateFormat = dayjs().format(YYYY-M-D);
-var now = dayjs()
+var dateFormat = dayjs('2022-12-8').format(YYYY/M/D);
+var now = dayjs('2022-12-8').format(YYYY/M/D);
 
-for
+for (i = 0; i < timeEl.length; i++) {
+  dateFormatNow = dateFormat + timeEl[i].num;
+  if (dayjs(now).isBefore(dateFormat)) {
+    timeEl[i].location.setAttribute('class', "row time-block future");
+  };
+  if (!dayjs(now).isBefore(dateFormat)) {
+    timeEl[i].location.setAttribute('class', "row time-block past");
+  }
+  if (dayjs(now).isBefore(dateFormat)) {
+    timezEl[i].location.setAttribute('class', "row time-block present");
+  };
+console.log(dateFormat)
+  nine.btn.addEventlistener("click", function () { saveInput(nine.location, 0) })
+  ten.btn.addEventlistener("click", function () { saveInput(ten.location, 1) })
+  eleven.btn.addEventlistener("click", function () { saveInput(nine.location, 2) })
+  twelve.btn.addEventlistener("click", function () { saveInput(nine.location, 3) })
+  one.btn.addEventlistener("click", function () { saveInput(nine.location, 4) })
+  two.btn.addEventlistener("click", function () { saveInput(nine.location, 5) })
+  three.btn.addEventlistener("click", function () { saveInput(nine.location, 6) })
+
+
+
+
+
+
+}
+
 
 
 
