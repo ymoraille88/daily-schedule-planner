@@ -29,21 +29,21 @@ var twelve = {
 
 };
 
-var one = {
+var thirteen = {
   location: $("#hour-1")[0],
   btn: $("#save"),
   num: "1"
 
 };
 
-var two = {
+var fourteen = {
   location: $("#hour-2")[0],
   btn: $("#save"),
   num: "2"
 
 };
 
-var three = {
+var fifteen = {
   location: $("#hour-3")[0],
   btn: $("#save"),
   num: "3"
@@ -51,8 +51,8 @@ var three = {
 };
 var timeEl = [nine, ten,eleven, twelve, one, two, three];
 
-var dateFormat = dayjs('2022-12-8').format(YYYY/M/D);
-var now = dayjs('2022-12-8').format(YYYY/M/D);
+var dateFormat = dayjs('2022-12-8').format(YYYY/MM/DD);
+var now = dayjs('2022-12-8').format(YYYY/MM/DD);
 
 for (i = 0; i < timeEl.length; i++) {
   dateFormatNow = dateFormat + timeEl[i].num;
