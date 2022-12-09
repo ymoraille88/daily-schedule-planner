@@ -5,49 +5,49 @@ currentDay.textContent =  dayjs().format('dddd, MMMM DD YYYY');
 
 var nine = {
   location: $("#hour-9")[0],
-  btn: $("#save"),
+  btn: $('#saveNine'),
   num: "9"
 
 };
 
 var ten = {
-  location: $("#hour-10")[0],
-  btn: $("#save"),
+  location: $('#hour-10')[0],
+  btn: $("#saveTen"),
   num: "10"
 
 };
 
 var eleven = {
-  location: $("#hour-11")[0],
-  btn: $("#save"),
+  location: $('#hour-11')[0],
+  btn: $("#saveEleven"),
   num: "11"
 
 };
 
 var twelve = {
-  location: $("#hour-12")[0],
-  btn: $("#save"),
+  location: $('hour-12')[0],
+  btn: $("#saveTwelve"),
   num: "12"
 
 };
 
 var thirteen = {
-  location: $("#hour-13")[0],
-  btn: $("#save"),
+  location: $('#hour-13')[0],
+  btn: $("#saveThirteen"),
   num: "13"
 
 };
 
 var fourteen = {
-  location: $("#hour-14")[0],
-  btn: $("#save"),
+  location: $('#hour-14')[0],
+  btn: $("#saveFourteen"),
   num: "14"
 
 };
 
 var fifteen = {
-  location: $("#hour-15")[0],
-  btn: $("#save"),
+  location: $('#hour-15')[0],
+  btn: $("#saveFifteen"),
   num: "15"
 
 };

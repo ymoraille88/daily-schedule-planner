@@ -13,3 +13,5 @@ Each block has a color.  The gray represents the past event, The red represent t
 the app updates on a hourly basis.
 
 ## Visuals
+
+![SCH](./assets/images/Image%2012-9-22%20at%2012.10%20AM.jpg)
