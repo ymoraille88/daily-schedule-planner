@@ -1,5 +1,6 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-
+var currentDay = $("currentDay");
+currentDay.textContent =  dayjs('2022-12-8').format(YYYY/MM/DD);
 
 var nine = {
   location: $("#hour-9")[0],
@@ -57,13 +58,13 @@ var now = dayjs('2022-12-8').format(YYYY/MM/DD);
 for (i = 0; i < timeEl.length; i++) {
   dateFormatNow = dateFormat + timeEl[i].num;
   if (dayjs(now).isBefore(dateFormat)) {
-    timeEl[i].location.setAttribute('class', "row time-block future");
+    timeEl[i].location.setAttribute('class', "row time-block past");
   };
   if (!dayjs(now).isBefore(dateFormat)) {
-    timeEl[i].location.setAttribute('class', "row time-block past");
+    timeEl[i].location.setAttribute('class', "row time-block present");
   }
   if (dayjs(now).isBefore(dateFormat)) {
-    timezEl[i].location.setAttribute('class', "row time-block present");
+    timezEl[i].location.setAttribute('class', "row time-block future");
   };
 console.log(dateFormat)
   nine.btn.addEventlistener("click", function () { saveInput(nine.location, 0) })
