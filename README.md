@@ -2,7 +2,7 @@
 
 ## project link
 
-[ProjectLink]()
+[ProjectLink](https://ymoraille88.github.io/daily-schedule-planner/)
 
 ## Description
 
