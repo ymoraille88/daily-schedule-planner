@@ -1,6 +1,6 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-var currentDay = $("currentDay");
-currentDay.textContent =  dayjs('2022-12-8').format(YYYY/MM/DD);
+var currentDay = $('#currentDay')[0];
+currentDay.textContent =  dayjs().format('dddd, MMMM DD YYYY');
 
 var nine = {
   location: $("#hour-9")[0],
@@ -31,40 +31,40 @@ var twelve = {
 };
 
 var thirteen = {
-  location: $("#hour-1")[0],
+  location: $("#hour-13")[0],
   btn: $("#save"),
-  num: "1"
+  num: "13"
 
 };
 
 var fourteen = {
-  location: $("#hour-2")[0],
+  location: $("#hour-14")[0],
   btn: $("#save"),
-  num: "2"
+  num: "14"
 
 };
 
 var fifteen = {
-  location: $("#hour-3")[0],
+  location: $("#hour-15")[0],
   btn: $("#save"),
-  num: "3"
+  num: "15"
 
 };
-var timeEl = [nine, ten,eleven, twelve, one, two, three];
+var timeEl = [nine, ten,eleven, twelve, thirteen, fourteen, fifteen];
 
-var dateFormat = dayjs('2022-12-8').format(YYYY/MM/DD);
-var now = dayjs('2022-12-8').format(YYYY/MM/DD);
+var dateFormat = dayjs().format('DD/MM/YYYY');
+var now = dayjs().format('DD/MM/YYYY');
 
 for (i = 0; i < timeEl.length; i++) {
   dateFormatNow = dateFormat + timeEl[i].num;
   if (dayjs(now).isBefore(dateFormat)) {
-    timeEl[i].location.setAttribute('class', "row time-block past");
+    timeEl[i].location.setAttribute('class', "row time-block ");
   };
   if (!dayjs(now).isBefore(dateFormat)) {
-    timeEl[i].location.setAttribute('class', "row time-block present");
+    timeEl[i].location.setAttribute('class', "row time-block ");
   }
   if (dayjs(now).isBefore(dateFormat)) {
-    timezEl[i].location.setAttribute('class', "row time-block future");
+    timeEl[i].location.setAttribute('class', "row time-block ");
   };
 console.log(dateFormat)
   nine.btn.addEventlistener("click", function () { saveInput(nine.location, 0) })
